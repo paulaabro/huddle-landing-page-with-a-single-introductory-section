@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --purple: #684bb1;
+  --pink: #ff52c1;
+  --magenta: #e880e8;
+}
+
+body {
+  background-color: var(--purple);
+  background-image: url("./images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+header,
+main,
+footer {
+  max-width: 304px;
+  margin: 0 auto;
+}
+
+header {
+  height: 95px;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 120px;
+}
+
+main {
+  max-width: 304px;
+  margin-top: 31px;
+  text-align: center;
+}
+
+h1 {
+  font: 600 24px/36px "Open Sans", sans-serif;
+  margin: 64px 0 16px;
+}
+
+button {
+  width: 200px;
+  height: 40px;
+
+  background-color: #fff;
+  color: var(--purple);
+  font-size: 12px;
+  line-height: 18px;
+
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+  border-radius: 20px;
+  margin: 24px 0 64px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  font-size: 18px;
+}
