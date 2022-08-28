@@ -11,6 +11,7 @@ body {
   background-image: url("./images/bg-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
 
   font-family: "Poppins", sans-serif;
   color: #fff;
@@ -34,14 +35,19 @@ header img {
 }
 
 main {
-  max-width: 304px;
   margin-top: 31px;
   text-align: center;
 }
 
 h1 {
-  font: 600 24px/36px "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
   margin: 64px 0 16px;
+}
+
+p {
+  font: 16px/24px "Open Sans", sans-serif;
 }
 
 button {
@@ -77,4 +83,86 @@ footer {
 
 i {
   font-size: 18px;
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url("./images/bg-desktop.svg");
+  }
+
+  header,
+  main,
+  footer {
+    max-width: 1270px;
+    margin: 0 auto;
+  }
+
+  header {
+    height: 160px;
+  }
+
+  header img {
+    width: 200px;
+  }
+
+  main {
+    display: grid;
+    margin-top: 40px;
+    grid-template-areas:
+      "left ."
+      "left ."
+      "left .";
+    gap: 0 59px;
+
+    text-align: start;
+  }
+
+  main img {
+    width: 696px;
+    max-width: 696px;
+    grid-area: left;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 60px;
+    margin: 32px 0 0;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  button {
+    height: 56px;
+    font-size: 18px;
+    line-height: 27px;
+    border-radius: 28px;
+    text-align: center;
+    margin: 0 0 155px;
+    cursor: pointer;
+    box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+    transition: all 500ms;
+  }
+
+  button:hover {
+    background-color: var(--magenta);
+    color: #fff;
+  }
+
+  footer {
+    justify-content: flex-end;
+    margin-bottom: 40px;
+  }
+
+  .circle {
+    cursor: pointer;
+    transition: all 500ms;
+  }
+
+  footer div:hover {
+    color: var(--pink);
+    border-color: var(--pink);
+  }
 }
